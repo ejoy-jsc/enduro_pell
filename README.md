@@ -7,9 +7,9 @@ Installation and setup here: [Enduro Bricks](https://www.endurojs.com/docs/endur
 Learn more about Pell here: [Pell](https://github.com/jaredreich/pell).
 
 ## Usage
-Use the types `pell` and `pellminimal`.
+Use the type `pell`.
 
-`pell` enables the following actions:
+`pell` enables the following actions by default:
 - Bold
 - Italic
 - Underline
@@ -18,10 +18,25 @@ Use the types `pell` and `pellminimal`.
 - Unordered list
 - Link
 
-`pellminimal` enables the following actions:
-- Bold
-- Italic
-- Link
+You can add additional actions from the brick options in `enduro.json` at the root of your Enduro project. For example:
+
+```
+"bricks": {
+  "enduro_pell": {
+    "actions": [
+      "bold",
+      "italic",
+      "underline",
+      "strikethrough",
+      "paragraph",
+      "quote",
+      "olist",
+      "ulist",
+      "link"
+    ]
+  }
+}
+```
 
 An example of a set of fields inside an Enduro flat file:
 
